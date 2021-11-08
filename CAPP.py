@@ -17,7 +17,7 @@ hotel2 = st.selectbox("select Hotel 2",hotel_names)
 hotel2 = df[df['Hotel']==hotel2]
 
 
-if st.button("Predict"):
+if st.button("Compare"):
 
     #all the features in a list
     polfeatlis = list(hotel1['feature'])

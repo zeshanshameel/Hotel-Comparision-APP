@@ -101,8 +101,10 @@ if st.button("Compare"):
         opn1.append(float(hotel2['neg%'].loc[hotel2['feature'] == i]))
 
     plt.figure(figsize=(20,10))
-    plt.bar(onlypolfeat,opp,label = np.unique(hotel1['Hotel']))
-    plt.bar(onlypolfeat1,opp1,label = 'only 2nd hotel')
+    plt.bar(onlypolfeat,opp,label = 'Hotel1 POS')
+    plt.bar(onlypolfeat,opn,label = 'Hotel1 NEG')
+    plt.bar(onlypolfeat1,opp1,label = 'Hotel2 POS')
+    plt.bar(onlypolfeat1,opn1,label = 'Hotel2 NEG')
     plt.xlabel('features')
     plt.ylabel('Polarity')
     plt.title('polarity comparision')
